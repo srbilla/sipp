@@ -1168,7 +1168,7 @@ void call::terminate(CStat::E_Action reason)
             computeStat(CStat::E_CALL_FAILED);
             computeStat(CStat::E_FAILED_STRCMP_DOESNT_MATCH);
             if (deadcall_wait && !initCall) {
-                sprintf(reason_str, "test failure at index %d", msg_index);
+                sprintf(reason_str, "test failed at index %d", msg_index);
                 new deadcall(id, reason_str);
             }
             break;
