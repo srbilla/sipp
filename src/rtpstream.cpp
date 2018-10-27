@@ -128,6 +128,7 @@ int           num_ready_threads = 0;
 int           busy_threads_max = 0;
 int           ready_threads_max = 0;
 
+// default value
 unsigned int  global_ssrc_id = 0xCA110000;
 
 //===================================================================================================
