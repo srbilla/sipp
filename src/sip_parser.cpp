@@ -574,7 +574,7 @@ TEST(Parser, get_call_id_github_0101) { // github-#0101
         "Content-Length:   129\r\n\r\n"
         "v=0\r\no=user1 53655765 2353687637 IN IP4 127.0.0.1\r\n"
         "s=-\r\nc=IN IP4 127.0.0.1\r\nt=0 0\r\n"
-        "m=audio 6000 RTP/AVP 0\r\na=rtpmap:0 PCMU/8000";
+        "m=audio 9000 RTP/AVP 0\r\na=rtpmap:0 PCMU/8000";
     EXPECT_STREQ("1-18220@127.0.0.1", get_call_id(input));
 }
 
