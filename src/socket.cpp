@@ -162,7 +162,7 @@ static void process_set(char* what)
         if (users >= 0) {
             WARNING("Can not set call limit for a user-based benchmark.");
         } else if (*end) {
-            WARNING("Invalid limit value for limit: \"%s\"", rest);
+            WARNING("Invalid limit value: \"%s\"", rest);
         } else {
             open_calls_allowed = lrest;
             open_calls_user_setting = 1;
