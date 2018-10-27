@@ -300,7 +300,7 @@ struct rtphdr {
 struct rtpevent {
     unsigned int event_id;
 
-    unsigned int volume:6;
+    unsigned int volume:8;
     unsigned int reserved:1;
     unsigned int end_of_event:1;
 
